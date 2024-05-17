@@ -1,0 +1,1 @@
+This is my project submission for the second coding challenege. I need to make a tip calculator.
