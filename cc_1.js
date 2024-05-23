@@ -7,19 +7,19 @@ function calcTipPercentage(bill) {
 function calcTip(bill) {
     return calcTipPercentage(bill) * bill
 }
-var bill = 100
-var tip = calcTip(bill)
-var total = bill + tip
+let bill = 100
+let tip = calcTip(bill)
+let total = bill + tip
 console.log('The bill was: $'+bill) 
 console.log('The tip was: $'+tip)
 console.log('And the total value: $'+total) 
-var bills = [275 , 40 , 430 , 125 , 555 , 44]
-var tips = []
+let bills = [275 , 40 , 430 , 125 , 555 , 44]
+let tips = []
 //This 'For' statement takes values from the list in the bills array and one at a time puts each number into the calcTip function. The results are then pushed into the tips array. 
 for  (const x of bills) {
     tips.push(calcTip(x))
 }
-var totals = []
+let totals = []
 //This 'For' statement assigns each corresponding value in the bills and tips arrays an index number. It adds the two numbers with the same index number and pushes the result into the totals array.
 bills.forEach((samplebill, index) => {
     const sampletip = tips[index];
